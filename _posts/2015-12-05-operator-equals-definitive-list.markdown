@@ -40,7 +40,7 @@ x = 2
 x **= 3
 x         # => 8
 
-# %= MOD equals
+# %= MOD EQUALS
 x = 5
 x %= 4
 x         # => 1
@@ -83,10 +83,11 @@ x = 6
 x |= 5
 x         # => 7
 
-# ^= XOR equals
+^= XOR equals
 x = 7
 x ^= 5
 x         # => 2
+
 
 {% endhighlight %}
 
