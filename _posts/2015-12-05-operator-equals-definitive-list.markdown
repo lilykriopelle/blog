@@ -9,7 +9,7 @@ I was recently preparing a lecture on the `||=` idiom in Ruby, when I realized: 
 
 After a few fruitless google searches, I decided to go straight to the source, and spent a little quality time with Ruby's [grammar][grammar] to find the answer to my question.  Line 883 of the linked code (a `.y` file that gets fed to YACC, resulting in `parse.c`) reads `%token <id> tOP_ASGN	/* +=, -=  etc. */`.  To find where these operate/assign rules are defined, I did a simple search through the rest of the file for `tOP_ASGN`.  Reading backwards from each return statement, it was easy enough to reconstruct the token sequences that ruby parses as `[op]=`.
 
-I wasn't necessarily surprised by what I found (a useful assortment of numerical, boolean, and bitwise operations, many of which I had already been using), but I am happy to have an answer.  Without further ado, here's a list of `[op]=` expressions in Ruby.  If you find one I've missed, please let me know, and I'll happily include it!
+I wasn't necessarily surprised by what I found (a useful assortment of numerical, boolean, and bitwise operations, many of which I had already been using), but I am happy to have an answer.  Without further ado, here's a list of `[op]=` statements in Ruby.  If you find one I've missed, please let me know, and I'll happily include it!
 
 tl; dr - `[+=, -=, /=, *=, **=, %=, &&=, ||=, <<=, >>=, &=, |=, ^=]`
 
