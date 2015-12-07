@@ -11,7 +11,7 @@ After a few fruitless google searches, I decided to go straight to the source, a
 
 I wasn't necessarily surprised by what I found (a useful assortment of numerical, boolean, and bitwise operations, many of which I had already been using), but I am happy to have an answer.  Without further ado, here's a list of `[op]=` expressions in Ruby.  If you find one I've missed, please let me know, and I'll happily include it!
 
-tl; dr - `[+=, -=, /=, *=, **=, %=, &&=, ||=. <<=, >>=, &=, |=, ^=]`
+tl; dr - `[+=, -=, /=, *=, **=, %=, &&=, ||=, <<=, >>=, &=, |=, ^=]`
 
 {% highlight ruby %}
 
